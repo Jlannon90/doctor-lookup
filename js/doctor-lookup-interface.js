@@ -3,7 +3,7 @@ var User = require('./../js/doctor-lookup.js').userModule;
 
 var displayDoctors = function(array) {
   array.forEach(function(data) {
-    $("#doctors").append('<li>' + data.firstName + ' ' + data.lastName + ' ' + data.title + '<br>' + data.bio + '</li>');
+    $("#doctors").append('<li><h3>' + data.firstName + ' ' + data.lastName + ' ' + data.title + '</h3><br>' + data.bio + '</li>');
   });
 };
 
